@@ -10,11 +10,9 @@ var usedArray = []
 // and print to the console
 var randLetter = letters[Math.floor(Math.random()*letters.length)];
 console.log(randLetter);
-console.log(letters.length);
 
-// Create function for game to call on that will generate random letter
-// to compare against user input
-
+// Create function for game to call on that will generate
+// random letter to compare against user input
 function compGuess() {
     randLetter=letters[Math.floor(Math.random()*letters.length)];
     console.log(randLetter);
