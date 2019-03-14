@@ -18,7 +18,7 @@ function compGuess() {
     console.log(randLetter);
 }
 
-// Win Function
+// Win Game Function
 function win(){
     usedArray=[];
     won++;
@@ -54,7 +54,9 @@ document.onkeyup=function (event) {
     
     var regexp = /[a-z]/gi;
         if (!regexp.test(userGuess)){
-            alert("Please choose a letter")
+            usedArray.pop(userGuess);
+            alert("Please choose a letter");
+            attempts++;
         }
 
 
